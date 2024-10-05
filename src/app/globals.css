@@ -2,26 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.id_card {
+  width: 500px;
+  padding-top: 95px;
+  padding-left: 10px;
+  height: 350px;
+  border-top: 2px solid #2eb6e8;
+  border-bottom: 2px solid #2eb6e8;
+  align-content: center;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 4px;
+}
+.photo {
+  position: absolute;
+  top: 10px;
+  margin-left: 3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.kamran_img {
+  position: relative;
+  left: 4rem;
+  bottom: 5rem;
+  mix-blend-mode: color-burn;
+  opacity: 0.1;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.sig {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+  text-decoration: overline black;
+  color: #2eb6e8;
+  position: relative;
+  bottom: 15px;
+}
+.p {
+  position: relative;
+  top: 11px;
+  /* left: 30px; */
+  display: flex;
+  justify-content: center;
+  color: white;
+  transform: skewx(15deg);
+  background-color: #7e8c8d;
+  width: 70px;
+  border-radius: 2px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+p {
+  text-align: center;
+}
+
+#li {
+  display: flex;
+  color: #2eb6e8;
+  font-weight: 600;
+}
+#li2 {
+  color: black;
+  margin-left: 4px;
+}
+
+.my {
+  position: relative;
+  bottom: 360px;
+  left: 340px;
+  border-radius: 4px;
 }
